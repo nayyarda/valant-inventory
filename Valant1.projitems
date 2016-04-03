@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{857D6175-2CCE-4ED8-A4AC-297A4604109D}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Valant1</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\InventoryAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IInventoryAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ItemType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Notification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\TransactionType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\TimeUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Enums\" />
+  </ItemGroup>
+</Project>
